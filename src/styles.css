@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffdbac;
+    color: #333;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  .header {
+    background-color: #e63946;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  .language-selector {
+    margin-top: 40px;
+  }
+  
+  .main-content {
+    padding: 50px 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #2a9d8f;
+  }
+  
+  .main-description {
+    font-size: 1.2rem;
+    color: #264653;
+  }
+  
+  .sub-description {
+    font-size: 1rem;
+    color: #264653;
+  }
+  
+  .footer {
+    background-color: #e63946;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .main-title {
+      font-size: 3rem;
+    }
+  
+    .main-description {
+      font-size: 1.5rem;
+    }
+  }
+  
